@@ -1,0 +1,142 @@
+/*声明 思源字体-Light*/
+@font-face {
+    font-family: 'SourceHanSans-Light';
+    src: url('/static/css/font/join/SourceHanSans-Light.otf');
+    src:
+        url('/static/css/font/join/SourceHanSans-Light.eot?#font-spider') format('embedded-opentype'),
+        url('/static/css/font/join/SourceHanSans-Light.woff') format('woff'),
+        url('/static/css/font/join/SourceHanSans-Light.ttf') format('truetype'),
+        url('/static/css/font/join/SourceHanSans-Light.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+ul, li{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    overflow-y: hidden;
+    height: 100%;
+    min-width: 1280px;
+    color: #ffffff;
+    font-family: 'SourceHanSansCN-Light';
+}
+
+body {
+    background: url("/static/images/bg-all.png") no-repeat center;
+}
+
+.container-fluid {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.btn-primary {
+    width: 72px;
+    height: 36px;
+    cursor: pointer;
+    background-image: url('/static/images/btn_primary.png');
+}
+
+.btn-primary:hover {
+    background-image: url('/static/images/btn_primary_hover.png');
+}
+
+.btn-middle-default {
+    width: 120px;
+    height: 46px;
+    cursor: pointer;
+    background-image: url('/static/images/btn_middle_default.png');
+}
+
+.btn-middle-default:hover {
+    background-image: url('/static/images/btn_middle_default_hover.png');
+}
+
+.btn-middle {
+    width: 120px;
+    height: 46px;
+    cursor: pointer;
+    background-image: url('/static/images/btn_middle.png');
+}
+
+.btn-middle:hover {
+    background-image: url('/static/images/btn_middle_hover.png');
+}
+
+.btn-large {
+    width: 88px;
+    height: 33px;
+    cursor: pointer;
+}
+
+.btn-player {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    background-image: url("/static/images/btn-player.png");
+}
+
+.btn-player:hover {
+    background-image: url("/static/images/btn-player-hover.png");
+}
+
+.btn-back {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-image: url("/static/images/btn_back.png");
+}
+
+.btn-back:hover {
+    background-image: url("/static/images/btn_back_hover.png");
+}
+
+.swiper-button {
+    width: 64px !important;
+    height: 64px !important;
+    background-size:64px 64px !important;
+    cursor: pointer;
+}
+
+.swiper-button-prev {
+    background-image: url("/static/images/swiper_prev_btn.png") !important;
+}
+
+.swiper-button-prev:hover {
+    background-image: url("/static/images/swiper_prev_btn_hover.png") !important;
+}
+
+.swiper-button-next {
+    background-image: url("/static/images/swiper_next_btn.png") !important;
+}
+
+.swiper-button-next:hover {
+    background-image: url("/static/images/swiper_next_btn_hover.png") !important;
+}
+
+.bg {
+    height: 100%;
+    background-size: 1920px 1080px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.template {
+    height: 100%;
+}
