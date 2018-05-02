@@ -64,7 +64,7 @@ const router = new VueRouter({
 });
 
 var store = {
-    debug: true,
+    debug: false,
     state: {
         userinfo: {},
         login: {
@@ -133,9 +133,9 @@ new Vue({
         clearUserinfo: function () {
             this.$clearStorage();
             this.store.clearUserinfoAction();
-            this.store.setLoginAction(this.store.state.login, {
+            this.store.setLoginAction(Object.assign({}, this.store.state.login, {
                 hasLogin: false
-            });
+            }));
         }
     }
 }).$mount('#app');

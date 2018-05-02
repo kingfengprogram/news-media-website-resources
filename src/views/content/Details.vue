@@ -90,13 +90,8 @@ export default {
                 });
         }
     },
-    activated: function () {
+    created: function () {
         this.loadData();
-    },
-    deactivated: function () {
-        setTimeout(() => {
-            this.$destroy();
-        }, 800);
     }
 };
 </script>

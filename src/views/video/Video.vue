@@ -44,8 +44,8 @@ export default {
     data: function () {
         return {
             pagination: GlobalConfig.pagination,
-            playVideoId: 0,
-            playVideoUrl: '2c9084d36222ab40016222ab76b90000',
+            playVideoId: '2c9084d36222ab40016222ab76b90000',
+            playVideoUrl: '',
             difficultyCount: [1, 2, 3],
             videoList: [
                 {
@@ -203,6 +203,8 @@ export default {
                 .then((res) => {
                     if (res.data.result === 'success') {
                         this.videoList = res.data.pagination.dataList;
+                        this.playVideoId = this.videoList[0].id;
+                        this.playVideoUrl = this.videoList[0].url;
                         this.$nextTick(() => {
                             this.$refs.videoPosterSwiper.swiper.controller.control = this.$refs.videoBgSwiper.swiper;
                         });
@@ -210,13 +212,8 @@ export default {
                 });
         }
     },
-    activated: function () {
+    created: function () {
         this.loadData();
-    },
-    deactivated: function () {
-        setTimeout(() => {
-            this.$destroy();
-        }, 800);
     }
 };
 

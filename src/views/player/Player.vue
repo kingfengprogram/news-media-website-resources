@@ -1,5 +1,5 @@
 <template>
-    <div class="template">
+    <div class="template bg">
         <div class="player-container">
             <video-player class="vjs-custom-skin" ref="videoPlayer" :options="playerOptions" :playsinline="true"
                           @play="onPlayerPlay($event)" @pause="onPlayerPause($event)" @ended="onPlayerEnded($event)"
@@ -132,7 +132,7 @@ export default {
             return this.$refs.videoPlayer.player;
         }
     },
-    activated: function () {
+    created: function () {
         this.playerOptions.sources[0].src = this.$loadRemoteFile(this.$route.query.url);
         this.$nextTick(() => {
             if (this.player && this.player.paused()) {
@@ -179,6 +179,7 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
+        background: url("/static/images/bg-all.png");
     }
 
     .template .player-container {

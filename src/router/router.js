@@ -1,4 +1,4 @@
-const App = () => import('@/App');
+const Root = () => import('@/components/Root');
 const Layout = () => import('@/components/Layout/Layout');
 const Index = () => import('@/views/index/Index');
 const Introduction = () => import('@/views/introduction/Introduction');
@@ -18,7 +18,7 @@ export default [
     },
     {
         path: '/',
-        component: App,
+        component: Root,
         children: [
             {
                 path: '/index',

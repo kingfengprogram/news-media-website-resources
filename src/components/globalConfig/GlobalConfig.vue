@@ -11,10 +11,11 @@ const pagination = {
     dataList: []
 };
 
-// 管理后台地址
-const adminUrl = 'http://113.108.110.62:19190/website-protal';
-// const adminUrl = 'http://localhost:9091';
-const resourcesUrl = 'http://113.108.110.62:19190/website-admin';
+// 后台地址
+// const adminUrl = 'http://113.108.110.62:19190';
+const adminUrl = 'http://172.16.1.113:9190';
+// const resourcesUrl = 'http://113.108.110.62:19190/manager';
+const resourcesUrl = 'http://172.16.1.113:9190/manager';
 
 // 存储地址,本地和oss不同
 const stroge = {

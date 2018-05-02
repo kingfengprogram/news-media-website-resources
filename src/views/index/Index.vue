@@ -1,7 +1,7 @@
 <template>
     <div class="container-fluid">
         <div class="main bg">
-            <video id="bgvideo" autoplay="true" width="100%" loop>
+            <video id="bgvideo" autoplay="true" loop>
                 <source src="/static/video/index_center_bg.mp4" type="video/mp4">
                 您的浏览器不支持 video 标签
             </video>
@@ -54,10 +54,7 @@ export default {
         position: fixed;
         right: 0;
         bottom: 0;
-        min-width: 100%;
-        min-height: 100%;
-        width: auto;
-        height: auto;
+        width: 100%;
         z-index: -100;
     }
 

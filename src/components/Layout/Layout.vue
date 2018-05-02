@@ -3,9 +3,7 @@
         <head-top></head-top>
         <div class="slide-wapper">
             <transition :name="transitionName">
-                <keep-alive exclude="Index">
-                    <router-view></router-view>
-                </keep-alive>
+                <router-view></router-view>
                 <!--<router-view @mousewheel.native="changeView($event)" @DOMMouseScroll.native="changeView($event)"></router-view>-->
             </transition>
         </div>

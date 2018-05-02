@@ -32,10 +32,6 @@ html, body {
     font-family: 'SourceHanSansCN-Light';
 }
 
-body {
-    background: url("/static/images/bg-all.png") no-repeat center;
-}
-
 .container-fluid {
     width: 100%;
     height: 100%;

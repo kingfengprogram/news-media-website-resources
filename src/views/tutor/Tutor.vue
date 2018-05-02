@@ -177,6 +177,8 @@ export default {
                 .then((res) => {
                     if (res.data.result === 'success') {
                         this.tutorList = res.data.pagination.dataList;
+                        this.playVideoId = this.tutorList[0].id;
+                        this.playVideoUrl = this.tutorList[0].introductionVideo;
                         this.$nextTick(() => {
                             this.$refs.tutorPosterSwiper.swiper.controller.control = this.$refs.tutorBgSwiper.swiper;
                         });
@@ -184,13 +186,8 @@ export default {
                 });
         }
     },
-    activated: function () {
+    created: function () {
         this.loadData();
-    },
-    deactivated: function () {
-        setTimeout(() => {
-            this.$destroy();
-        }, 800);
     }
 };
 
